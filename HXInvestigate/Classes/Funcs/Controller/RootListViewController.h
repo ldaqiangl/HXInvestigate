@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, ListStateType) {
 
 
 @interface RootListViewController : UIViewController
+@property (nonatomic, weak) UIViewController *managerVc;
 
 //@property (nonatomic, assign) BOOL isSelected;
 

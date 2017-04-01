@@ -189,25 +189,27 @@
 }
 
 
-- (MBProgressHUD *)getMBProgressHUDwithLoadString:(NSString *)loadString detailString:(NSString *)detailString isShowCancel:(BOOL)isShowCancel cancelBlock:(MBProgressHUDCancelBlock)cancelBalock {
-    
-    UIWindow *kWindow=[[[UIApplication sharedApplication] delegate] window];
-    
-    __block MBProgressHUD * hud=[[MBProgressHUD alloc] initWithView:kWindow];
-    hud.labelText=loadString;
-    hud.detailsLabelText=detailString;
-    hud.mode=MBProgressHUDModeIndeterminate;
-    hud.animationType=MBProgressHUDAnimationFade;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [kWindow  addSubview:hud];
-        [hud show:YES];
-    });
-    
-    
-    return hud;
-}
+/*
+ - (MBProgressHUD *)getMBProgressHUDwithLoadString:(NSString *)loadString detailString:(NSString *)detailString isShowCancel:(BOOL)isShowCancel cancelBlock:(MBProgressHUDCancelBlock)cancelBalock {
+ 
+ UIWindow *kWindow=[[[UIApplication sharedApplication] delegate] window];
+ 
+ __block MBProgressHUD * hud=[[MBProgressHUD alloc] initWithView:kWindow];
+ hud.labelText=loadString;
+ hud.detailsLabelText=detailString;
+ hud.mode=MBProgressHUDModeIndeterminate;
+ hud.animationType=MBProgressHUDAnimationFade;
+ 
+ dispatch_async(dispatch_get_main_queue(), ^{
+ [kWindow  addSubview:hud];
+ [hud show:YES];
+ });
+ 
+ 
+ return hud;
+ }
 
+ */
 
 
 - (NSURLSessionTask *)startRequestTaskWithBodyData:(NSData *)data

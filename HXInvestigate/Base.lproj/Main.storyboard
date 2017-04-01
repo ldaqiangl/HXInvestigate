@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLG-ND-l0c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLG-ND-l0c">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,14 +30,14 @@
         <!--功能-->
         <scene sceneID="MRi-PM-bkj">
             <objects>
-                <navigationController title="功能" id="yW6-VK-kZU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FucNavVc" title="功能" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yW6-VK-kZU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="功能" id="Hs7-tg-Az4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hj2-Qh-Zxk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="VD6-Gf-sDO" kind="relationship" relationship="rootViewController" id="OS5-Lz-zHa"/>
+                        <segue destination="VD6-Gf-sDO" kind="relationship" relationship="rootViewController" id="oz1-cb-HV7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gib-fW-Ktk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +236,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="gsY-KQ-otC">
             <objects>
-                <tabBarController id="qLG-ND-l0c" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" id="qLG-ND-l0c" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="aXH-SW-tXl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

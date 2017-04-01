@@ -8,9 +8,6 @@
 
 #import "HXHomeTableViewCell.h"
 
-#import "MJPhotoBrowser.h"
-#import "MJPhoto.h"
-
 //#import "GetClassNewsListInterface.h"
 //#import "ClassNewsBusiness.h"
 //#import "ChooseViewController.h"
@@ -114,34 +111,6 @@
 #pragma mark - <内部视图交互事件> -
 
 - (void)clickOnePicWithPicImgView:(HXHomeCellImageView *)picImgView andIndex:(NSInteger)picIndex {
-    
-    NSInteger count = _cellDataModel.images.count;
-    // 1.封装图片数据
-    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i<count; i++) {
-        
-        NSString *url = @"";//[NSString stringWithFormat:@"%@/%@?p=0", [EnvironmentConfigModel sharedEnvironmentConfigModel].env_configs.zimg_download_endpoint, _cellDataModel.images[i]];
-        
-        MJPhoto *photo = [[MJPhoto alloc] init];
-        photo.url = [NSURL URLWithString:url]; // 图片路径
-//        photo.imageMd5 = _cellDataModel.images[i];
-//        photo.label = _cellDataModel.lable;
-        
-        if ([url isKindOfClass:[UIImage class]]) {
-            photo.url = nil;
-            photo.srcImageView.image = (UIImage *)url;
-        }
-        
-        [photos addObject:photo];
-        
-        photo.srcImageView = picImgView;
-    }
-    
-    // 2.显示相册
-    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
-    browser.currentPhotoIndex = picIndex; // 弹出相册时显示的第一张图片是？
-    browser.photos = photos; // 设置所有的图片
-    [browser show];
     
 }
 

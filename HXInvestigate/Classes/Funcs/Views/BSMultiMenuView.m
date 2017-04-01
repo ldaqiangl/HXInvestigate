@@ -141,8 +141,9 @@ static const CGFloat normalYScale = 1.0;
         rootVc.view.frame = CGRectMake(pageX, pageY, pageW, pageH);
         [_pagesScrollView addSubview:rootVc.view];
         
-//        [self.managerVc addChildViewController:rootVc];
-//        [rootVc didMoveToParentViewController:self.managerVc];
+        [self.managerVc addChildViewController:rootVc];
+        [rootVc didMoveToParentViewController:self.managerVc];
+        rootVc.managerVc = self.managerVc;
         [self.managerVc addObserver:rootVc forKeyPath:@"listState" options:NSKeyValueObservingOptionNew context:nil];
         
         pageX += pageW;

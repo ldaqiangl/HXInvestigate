@@ -10,4 +10,6 @@
 
 @interface NetDataModel : NSObject
 
+@property (nonatomic, copy) NSString *titleName;
+
 @end

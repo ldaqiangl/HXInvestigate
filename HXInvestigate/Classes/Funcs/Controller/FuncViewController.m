@@ -79,13 +79,11 @@ UITableViewDataSource>
     self.listState = eListStateNormalType;
     
     [self setupIADView];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
     
+    [super viewWillAppear:animated];
 }
 
 #pragma mark - <数据源加载> -

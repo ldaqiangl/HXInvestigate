@@ -9,8 +9,10 @@
 #import "TableListViewController.h"
 #import "YiRefreshHeader.h"
 #import "YiRefreshFooter.h"
-
+#import "NetDataModel.h"
 #import "HXHomeTableViewCell.h"
+
+#import "BLEScanViewController.h"
 
 @interface TableListViewController ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -106,7 +108,6 @@
             });
         };
     }
-
     
     // 是否在进入该界面的时候就开始进入刷新状态
     [refreshHeader beginRefreshing];
@@ -115,24 +116,21 @@
     
 }
 
-
 - (void)loadData {
     
     for (int i = 0; i < 20; i++) {
 //        ClassNewsModel 
     }
-    
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15;
+    return self.dataSourceArr.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100.0;
+    return 60;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellId = @"cell";
@@ -141,15 +139,36 @@
         cell = [[HXHomeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%d",(int)indexPath.row];
+    NetDataModel *dataModle = [self.dataSourceArr objectAtIndex:indexPath.row];
+    cell.textLabel.text = dataModle.titleName;
+    
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) {
+        
+        NSLog(@"==>> %@",self.managerVc);
+        BLEScanViewController *bleScanVc = [[BLEScanViewController alloc] init];
+        [self.managerVc.navigationController pushViewController:bleScanVc
+                                                       animated:YES];
+    }
+}
+
 
 - (NSMutableArray *)dataSourceArr {
     
     if (!_dataSourceArr) {
         
         _dataSourceArr = [NSMutableArray array];
+        NSArray *arr = @[@"蓝牙设备",@"ReactCocoa",@"ReactNative",@"VIPER"];
+        for (NSInteger i = 0; i < arr.count; i++) {
+            
+            NetDataModel *dataModle = [[NetDataModel alloc] init];
+            dataModle.titleName = arr[i];
+            [_dataSourceArr addObject:dataModle];
+        }
     }
     return _dataSourceArr;
 }
