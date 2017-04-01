@@ -1,0 +1,40 @@
+//
+//  框架演示demoPrefixHeader.pch
+//  框架演示demo
+//
+//  Created by 董富强 on 16/7/16.
+//  Copyright © 2016年 董富强. All rights reserved.
+//
+
+#ifndef ____demoPrefixHeader_pch
+#define ____demoPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "HXKit.h"
+#import "MJRefresh.h"
+#import "UIView+frameAdjust.h"
+
+#define GLLoggingPageImpression @"GLLoggingPageImpression"
+#define GLLoggingTrackedEvents @"GLLoggingTrackedEvents"
+#define GLLoggingEventName @"GLLoggingEventName"
+#define GLLoggingEventSelectorName @"GLLoggingEventSelectorName"
+#define GLLoggingEventHandlerBlock @"GLLoggingEventHandlerBlock"
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define PX_TO_PT(px) px*kScreenWidth/750.0
+
+#ifdef DEBUG
+#define debugLog(...) NSLog(__VA_ARGS_)
+#define debugMethod() NSLog(@"%s",__func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#endif
+
+#define RGB(A,B,C) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+
+#endif /* ____demoPrefixHeader_pch */
