@@ -29,7 +29,8 @@
 
 - (IBAction)setBtnClick:(id)sender {
     
-    [self updateUserInfoWith:@"dfq" andAge:@"28"];
+    //[self updateUserInfoWith:@"dfq" andAge:@"28"];
+    [self performSegueWithIdentifier:@"setViewcontroller001" sender:nil];
     
 }
 

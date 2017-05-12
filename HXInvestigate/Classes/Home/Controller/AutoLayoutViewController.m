@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "CustomeView.h"
 #import "XZLTextView.h"
+#import "CustomeLayoutViewController.h"
 
 @interface AutoLayoutViewController ()
 
@@ -32,7 +33,16 @@
     //
     //    }];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"autoLayoutTest" style:UIBarButtonItemStylePlain target:self action:@selector(pushToAutoLayout)];
+    
     [self exp02];
+}
+
+- (void)pushToAutoLayout {
+    
+    CustomeLayoutViewController *autoLayoutVc = [[CustomeLayoutViewController alloc] init];
+    autoLayoutVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:autoLayoutVc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

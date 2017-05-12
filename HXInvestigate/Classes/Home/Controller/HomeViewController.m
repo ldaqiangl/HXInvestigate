@@ -47,13 +47,18 @@ static int _count = 0;
 {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"autoLayout" style:UIBarButtonItemStylePlain target:self action:@selector(pushToAutoLayout)];
-        
+    
+    CGRect alignmentRect = CGRectMake(70, 162, 180, 180);
+    CGRect imagebounds = CGRectMake(70, 162, 200, 200);
+    NSLog(@"===>> %@",NSStringFromCGRect(CGRectIntersection(alignmentRect, imagebounds)));
+    
     //[self raccommandUse];
 }
 
 - (void)pushToAutoLayout {
     
     AutoLayoutViewController *autoLayoutVc = [[AutoLayoutViewController alloc] init];
+    autoLayoutVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:autoLayoutVc animated:YES];
 }
 

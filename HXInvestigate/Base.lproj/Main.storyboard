@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLG-ND-l0c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLG-ND-l0c">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,14 +56,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-be-k0I">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-be-k0I">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ZZm-y9-b3q"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="setBtnClick:" destination="oX4-1L-fyd" eventType="touchUpInside" id="aJj-yu-xHH"/>
+                                    <action selector="setBtnClick:" destination="oX4-1L-fyd" eventType="touchUpInside" id="b75-83-RoD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,11 +77,31 @@
                     <navigationItem key="navigationItem" title="动态埋点demo" id="xOO-Ik-ZJ6"/>
                     <connections>
                         <outlet property="setBtn" destination="cVx-be-k0I" id="kGj-OX-h9r"/>
+                        <segue destination="WjX-by-t2G" kind="presentation" identifier="setViewcontroller001" modalTransitionStyle="coverVertical" id="RuS-aa-ZU9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVA-NV-UyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="914"/>
+            <point key="canvasLocation" x="416.80000000000001" y="913.49325337331345"/>
+        </scene>
+        <!--setViewcontroller001-->
+        <scene sceneID="Twn-X4-tcF">
+            <objects>
+                <viewController id="WjX-by-t2G" userLabel="setViewcontroller001" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tL4-8X-O6B"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZ2-iy-hKd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="evy-zV-INb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jfX-wd-qID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFb-gi-7EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="934"/>
         </scene>
         <!--功能-->
         <scene sceneID="BTN-eu-dKP">

@@ -35,7 +35,6 @@
     [self babyDelegate];
     //读取服务
     baby.channel(channelOnCharacteristicView).characteristicDetails(self.currPeripheral,self.characteristic);
-   
 }
 
 

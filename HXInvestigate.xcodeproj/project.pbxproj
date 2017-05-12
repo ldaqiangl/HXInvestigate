@@ -31,6 +31,12 @@
 		701828D71E8FAA6C006878DE /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 701828D61E8FAA6C006878DE /* PeripheralInfo.m */; };
 		704C4DF91D3CC138009BAEC7 /* AppDelegate+dynamicSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C4DF81D3CC138009BAEC7 /* AppDelegate+dynamicSet.m */; };
 		704C4DFC1D3CC2DA009BAEC7 /* DynamicConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C4DFB1D3CC2DA009BAEC7 /* DynamicConfig.m */; };
+		70AAEC0C1EC5B66E0058917B /* placeholder1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70AAEC0B1EC5B66E0058917B /* placeholder1.png */; };
+		70BD43891E98A555007CDBF6 /* CustomeLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD43871E98A555007CDBF6 /* CustomeLayoutViewController.m */; };
+		70BD438A1E98A555007CDBF6 /* CustomeLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BD43881E98A555007CDBF6 /* CustomeLayoutViewController.xib */; };
+		70BD438D1E98A5B7007CDBF6 /* LayoutView01.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD438C1E98A5B7007CDBF6 /* LayoutView01.m */; };
+		70BD43901E98A722007CDBF6 /* UIView+AmbiguityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD438F1E98A722007CDBF6 /* UIView+AmbiguityTest.m */; };
+		70BD43921E98BF48007CDBF6 /* 1122.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD43911E98BF48007CDBF6 /* 1122.png */; };
 		70CA20091D39D5DA00D0B05E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA20081D39D5DA00D0B05E /* main.m */; };
 		70CA200C1D39D5DA00D0B05E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA200B1D39D5DA00D0B05E /* AppDelegate.m */; };
 		70CA20121D39D5DA00D0B05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CA20101D39D5DA00D0B05E /* Main.storyboard */; };
@@ -263,6 +269,15 @@
 		704C4DF81D3CC138009BAEC7 /* AppDelegate+dynamicSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+dynamicSet.m"; sourceTree = "<group>"; };
 		704C4DFA1D3CC2DA009BAEC7 /* DynamicConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicConfig.h; sourceTree = "<group>"; };
 		704C4DFB1D3CC2DA009BAEC7 /* DynamicConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicConfig.m; sourceTree = "<group>"; };
+		70AAEC0B1EC5B66E0058917B /* placeholder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder1.png; sourceTree = "<group>"; };
+		70BD43861E98A555007CDBF6 /* CustomeLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeLayoutViewController.h; sourceTree = "<group>"; };
+		70BD43871E98A555007CDBF6 /* CustomeLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeLayoutViewController.m; sourceTree = "<group>"; };
+		70BD43881E98A555007CDBF6 /* CustomeLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomeLayoutViewController.xib; sourceTree = "<group>"; };
+		70BD438B1E98A5B7007CDBF6 /* LayoutView01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutView01.h; sourceTree = "<group>"; };
+		70BD438C1E98A5B7007CDBF6 /* LayoutView01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutView01.m; sourceTree = "<group>"; };
+		70BD438E1E98A722007CDBF6 /* UIView+AmbiguityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AmbiguityTest.h"; sourceTree = "<group>"; };
+		70BD438F1E98A722007CDBF6 /* UIView+AmbiguityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AmbiguityTest.m"; sourceTree = "<group>"; };
+		70BD43911E98BF48007CDBF6 /* 1122.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1122.png; sourceTree = "<group>"; };
 		70CA20041D39D5DA00D0B05E /* HXInvestigate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXInvestigate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CA20081D39D5DA00D0B05E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70CA200A1D39D5DA00D0B05E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -796,6 +811,7 @@
 		70D59B441DF8118700C50F10 /* Funcs */ = {
 			isa = PBXGroup;
 			children = (
+				70AAEC0B1EC5B66E0058917B /* placeholder1.png */,
 				70D59B451DF8118700C50F10 /* Controller */,
 				70D59B4D1DF8118700C50F10 /* Model */,
 				70D59B591DF8118700C50F10 /* Views */,
@@ -924,6 +940,9 @@
 				700459381E078B5200CEBAD6 /* AutoLayoutViewController.h */,
 				700459391E078B5200CEBAD6 /* AutoLayoutViewController.m */,
 				7004593A1E078B5200CEBAD6 /* AutoLayoutViewController.xib */,
+				70BD43861E98A555007CDBF6 /* CustomeLayoutViewController.h */,
+				70BD43871E98A555007CDBF6 /* CustomeLayoutViewController.m */,
+				70BD43881E98A555007CDBF6 /* CustomeLayoutViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -931,6 +950,11 @@
 		70D59B861DF8118700C50F10 /* CutomeView */ = {
 			isa = PBXGroup;
 			children = (
+				70BD43911E98BF48007CDBF6 /* 1122.png */,
+				70BD438E1E98A722007CDBF6 /* UIView+AmbiguityTest.h */,
+				70BD438F1E98A722007CDBF6 /* UIView+AmbiguityTest.m */,
+				70BD438B1E98A5B7007CDBF6 /* LayoutView01.h */,
+				70BD438C1E98A5B7007CDBF6 /* LayoutView01.m */,
 				70D59B871DF8118700C50F10 /* collectionViews */,
 				70D59B901DF8118700C50F10 /* CoreTextTest */,
 				70D59BA41DF8118700C50F10 /* other */,
@@ -1610,6 +1634,7 @@
 				70D59CF51DF8118700C50F10 /* bsDelPic@3x.png in Resources */,
 				70D59D1D1DF8118700C50F10 /* cursor@2x.png in Resources */,
 				70D59D1E1DF8118700C50F10 /* loading.bundle in Resources */,
+				70BD438A1E98A555007CDBF6 /* CustomeLayoutViewController.xib in Resources */,
 				70D59D181DF8118700C50F10 /* LRTypeView.xib in Resources */,
 				70D59CF11DF8118700C50F10 /* 003.png in Resources */,
 				70CA20121D39D5DA00D0B05E /* Main.storyboard in Resources */,
@@ -1622,7 +1647,9 @@
 				70D59D211DF8118700C50F10 /* SetFun01ViewController.xib in Resources */,
 				70D59D151DF8118700C50F10 /* CustomeView.xib in Resources */,
 				70D59CF31DF8118700C50F10 /* bsAddPic@3x.png in Resources */,
+				70AAEC0C1EC5B66E0058917B /* placeholder1.png in Resources */,
 				70D59D811DF8118700C50F10 /* expressionImage.plist in Resources */,
+				70BD43921E98BF48007CDBF6 /* 1122.png in Resources */,
 				70D59D011DF8118700C50F10 /* HomeModelViewController.xib in Resources */,
 				70D59D821DF8118700C50F10 /* expressionImage_custom.plist in Resources */,
 			);
@@ -1811,6 +1838,7 @@
 				701828B71E8F962A006878DE /* BabyOptions.m in Sources */,
 				70D59CE51DF8118700C50F10 /* FuncViewController.m in Sources */,
 				70D59D991DF8118700C50F10 /* ViewController1ViewController.m in Sources */,
+				70BD43901E98A722007CDBF6 /* UIView+AmbiguityTest.m in Sources */,
 				70D59D5D1DF8118700C50F10 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				70D59D161DF8118700C50F10 /* CutomeFirstView.m in Sources */,
 				70D59CF61DF8118700C50F10 /* BSPicHandle.m in Sources */,
@@ -1892,6 +1920,7 @@
 				70D59D361DF8118700C50F10 /* HXNetworkResult.m in Sources */,
 				70D59D001DF8118700C50F10 /* HomeModelViewController.m in Sources */,
 				70D59D471DF8118700C50F10 /* UIApplication+BSExt.m in Sources */,
+				70BD43891E98A555007CDBF6 /* CustomeLayoutViewController.m in Sources */,
 				70D59D041DF8118700C50F10 /* HomeViewController.m in Sources */,
 				70D59CE91DF8118700C50F10 /* CommentsModel.m in Sources */,
 				70D59D871DF8118700C50F10 /* WFTextView.m in Sources */,
@@ -1924,6 +1953,7 @@
 				701828D31E8FAA3F006878DE /* CharacteristicViewController.m in Sources */,
 				701828C51E8FA034006878DE /* XZLBluetoothBusiness.m in Sources */,
 				70D59CFC1DF8118700C50F10 /* HXHomeCellTextView.m in Sources */,
+				70BD438D1E98A5B7007CDBF6 /* LayoutView01.m in Sources */,
 				70D59D0A1DF8118700C50F10 /* CoreTextData.m in Sources */,
 				70D59D311DF8118700C50F10 /* HXDevice.m in Sources */,
 				70D59D051DF8118700C50F10 /* HXClassInfoItem.m in Sources */,
