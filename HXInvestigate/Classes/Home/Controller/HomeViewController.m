@@ -20,6 +20,8 @@
 
 #import "AutoLayoutViewController.h"
 #import "BabyRhythm.h"
+#import "DQTaskOperation.h"
+#import "APPManager.h"
 
 @interface HomeViewController () <UIAlertViewDelegate,
                                   NSStreamDelegate>
@@ -27,7 +29,10 @@
 {
     HomeModelViewController *modelVc;
     CustomeView *cView;
+    NSOperationQueue *queue1;
+    NSOperationQueue *queue2;
 }
+@property (nonatomic, strong) BabyRhythm *rhythm;
 
 @property (weak, nonatomic) IBOutlet UIButton *login;
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
@@ -47,13 +52,137 @@ static int _count = 0;
 {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"autoLayout" style:UIBarButtonItemStylePlain target:self action:@selector(pushToAutoLayout)];
-    
-    CGRect alignmentRect = CGRectMake(70, 162, 180, 180);
-    CGRect imagebounds = CGRectMake(70, 162, 200, 200);
-    NSLog(@"===>> %@",NSStringFromCGRect(CGRectIntersection(alignmentRect, imagebounds)));
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(taskEvent) name:@"dfqqfd" object:nil];
+//    CGRect alignmentRect = CGRectMake(70, 162, 180, 180);
+//    CGRect imagebounds = CGRectMake(70, 162, 200, 200);
+//    NSLog(@"===>> %@",NSStringFromCGRect(CGRectIntersection(alignmentRect, imagebounds)));
     
     //[self raccommandUse];
+//    [self updateAppStoreVersion];
+    
+    queue1 = [[NSOperationQueue alloc] init];
+    queue1.underlyingQueue = dispatch_queue_create("com.ldaqiangl.queue1", DISPATCH_QUEUE_CONCURRENT);
+    queue2 = [[NSOperationQueue alloc] init];
+    queue1.maxConcurrentOperationCount = 4;
+    queue2.maxConcurrentOperationCount = 2;
+    
+//    //设置beats break委托
+//    self.rhythm = [[BabyRhythm alloc] init];
+//    __weak __typeof(self)weakSelf = self;
+//    [self.rhythm setBlockOnBeatsBreak:^(BabyRhythm *bry) {
+//        
+//        NSLog(@"setBlockOnBeatsBreak call");
+//        if (bry) {
+//            
+//            [bry beats];
+//        } else {
+//            
+//            [bry beatsBreak];
+//        }
+//    }];
+//    
+//    //设置beats over委托
+//    [self.rhythm setBlockOnBeatsOver:^(BabyRhythm *bry) {
+//        
+//        NSLog(@"setBlockOnBeatsOver call,心跳包结束");
+//    }];
+//    
+
 }
+
+- (void)taskEvent {
+    
+    NSLog(@"收到 通知 %@",[NSThread currentThread]);
+}
+
+- (void)updateAppStoreVersion {
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",HX_APPLE_ID]];
+    
+    [[APPManager factoryAPPManager] verifyRequireUpdateToNewVersionWithAppId:nil andCom:^(BOOL isRequireNew, NSString *newVersion) {
+        
+        if (isRequireNew) {
+            UIAlertView *alert = [[UIAlertView alloc]
+                                  initWithTitle:[NSString stringWithFormat:@"有新版本%@",newVersion]
+                                  message:@"新的版本中有重大更新,请及时升级至最新版本"
+                                  delegate:self
+                                  cancelButtonTitle:@"忽略"
+                                  otherButtonTitles:@"确定", nil];
+            alert.delegate = self;
+            [alert show];
+        }
+    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    NSOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        sleep(1);
+
+        NSLog(@"currentThread1:%@ --------- %d",[NSThread currentThread],queue1.operationCount);
+        NSLog(@"<<<===>> operation1");
+        [_rhythm beats];
+    }];
+    
+    
+    NSOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        sleep(1);
+        
+        NSLog(@"currentThread2:%@ ------- %d",[NSThread currentThread],queue1.operationCount);
+        NSLog(@"<<<===>> operation2");
+        
+        dispatch_sync(queue1.underlyingQueue, ^{
+            
+            sleep(2);
+            NSLog(@"currentThread2:dispatch_async:%@ ------ %d",[NSThread currentThread],queue1.operationCount);
+            NSLog(@"===--> %s",dispatch_queue_get_label(queue1.underlyingQueue));
+        });
+        NSLog(@"======>> operation2任务结束 %@",[NSThread currentThread]);
+
+    }];
+    
+    
+    NSOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        
+        NSLog(@"currentThread3:%@ ------ %d",[NSThread currentThread],queue1.operationCount);
+        //        sleep(1);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"dfqqfd" object:nil];
+        NSLog(@"<<<===>> operation3 %@",[NSThread currentThread]);
+        
+        dispatch_sync(queue1.underlyingQueue, ^{
+           
+            sleep(2);
+            NSLog(@"currentThread3:dispatch_async:%@ ------ %d",[NSThread currentThread],queue1.operationCount);
+            NSLog(@"===--> %s",dispatch_queue_get_label(queue1.underlyingQueue));
+        });
+        NSLog(@"======>> operation3任务结束 %@",[NSThread currentThread]);
+    }];
+    
+    //    [operation start];
+    
+    DQTaskOperation *dqOp = [DQTaskOperation getBlock:^{
+        
+        NSLog(@"======%@::: ----- %d",[NSThread currentThread],queue1.operationCount);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            NSLog(@"==++====%@::: ----- %d",[NSThread currentThread],queue1.operationCount);
+        });
+    }];
+    
+//    [operation1 addDependency:operation2];
+//    [operation2 addDependency:dqOp];
+    
+    [queue1 addOperations:@[operation1,operation2] waitUntilFinished:NO];
+//    [queue2 addOperations:@[operation2] waitUntilFinished:NO];
+    
+    NSLog(@"%@",queue1.underlyingQueue);
+    
+    NSLog(@"============ boom ============");
+    
+}
+
 
 - (void)pushToAutoLayout {
     

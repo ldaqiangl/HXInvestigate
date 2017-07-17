@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-static CGFloat const HeadViewHeight = 200;
+static CGFloat const HeadViewHeight = 1;
 static CGFloat const BS_NAV_H = 44;
 static CGFloat const BS_STATEBAR_H = 20;
 static CGFloat const BS_TABBAR_H = 49;

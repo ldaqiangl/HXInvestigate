@@ -11,7 +11,11 @@
 #import "BabyCentralManager.h"
 #import "BabyCallback.h"
 
-
+@interface BabyCentralManager ()
+{
+    dispatch_queue_t queue;
+}
+@end
 
 @implementation BabyCentralManager
 
@@ -21,6 +25,7 @@
     self = [super init];
     if (self) {
         
+        queue = dispatch_queue_create("com.ldaqiangl.ble", NULL);
         
 #if  __IPHONE_OS_VERSION_MIN_REQUIRED > __IPHONE_6_0
         NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -35,13 +40,15 @@
 #endif
         
         NSArray *backgroundModes = [[[NSBundle mainBundle] infoDictionary]objectForKey:@"UIBackgroundModes"];
+        
+        NSLog(@"========>>>> %@",backgroundModes);
         if ([backgroundModes containsObject:@"bluetooth-central"]) {
             //后台模式
-            centralManager = [[CBCentralManager alloc]initWithDelegate:self queue:nil options:options];
+            centralManager = [[CBCentralManager alloc]initWithDelegate:self queue:queue options:options];
         }
         else {
             //非后台模式
-            centralManager = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
+            centralManager = [[CBCentralManager alloc]initWithDelegate:self queue:queue];
         }
         
         //pocket
@@ -128,11 +135,13 @@
 
 - (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary *)dict {
     
+    
 }
 
 //扫描到Peripherals
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
+    NSLog(@"=====current Thread:%@,,,%s",[NSThread currentThread],dispatch_queue_get_label(queue));
     //日志
     //BabyLog(@"当扫描到设备:%@",peripheral.name);
     [self addDiscoverPeripheral:peripheral];

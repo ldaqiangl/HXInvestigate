@@ -141,11 +141,11 @@
     
     NetDataModel *dataModle = [self.dataSourceArr objectAtIndex:indexPath.row];
     cell.textLabel.text = dataModle.titleName;
-    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     
     if (indexPath.row == 0) {
         
@@ -166,7 +166,7 @@
         for (NSInteger i = 0; i < arr.count; i++) {
             
             NetDataModel *dataModle = [[NetDataModel alloc] init];
-            dataModle.titleName = arr[i];
+            dataModle.titleName = [NSString stringWithFormat:@"this is %@",arr[i]];
             [_dataSourceArr addObject:dataModle];
         }
     }

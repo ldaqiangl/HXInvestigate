@@ -3,6 +3,16 @@
 source 'https://git.xzlcorp.com/daqiang/XZLDependencyPodSpecs.git'  #私有spec仓库的地址
 source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
 
+#inhibit_all_warnings!
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
+        end
+    end
+    
+end
+
 platform :ios, '8.0'
 
 target "HXInvestigate" do

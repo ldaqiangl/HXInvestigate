@@ -23,9 +23,13 @@
 + (instancetype)shareBabyBluetooth {
     static BabyBluetooth *share = nil;
     static dispatch_once_t oneToken;
+    NSLog(@"==++=>> %ld",oneToken);
     dispatch_once(&oneToken, ^{
+        NSLog(@"=== %ld",oneToken);
         share = [[BabyBluetooth alloc]init];
     });
+    NSLog(@"===>> %ld",oneToken);
+
    return share;
 }
 

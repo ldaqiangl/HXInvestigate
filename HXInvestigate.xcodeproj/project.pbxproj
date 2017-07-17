@@ -12,6 +12,11 @@
 		700459371E07814D00CEBAD6 /* XZLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 700459361E07814D00CEBAD6 /* XZLTextView.m */; };
 		7004593B1E078B5200CEBAD6 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700459391E078B5200CEBAD6 /* AutoLayoutViewController.m */; };
 		7004593C1E078B5200CEBAD6 /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7004593A1E078B5200CEBAD6 /* AutoLayoutViewController.xib */; };
+		700FB2611F0C975D004929D5 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 700FB2601F0C975D004929D5 /* MaskView.m */; };
+		700FB2641F0C9D2D004929D5 /* MyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 700FB2631F0C9D2D004929D5 /* MyLayer.m */; };
+		700FB2671F0C9D54004929D5 /* CAShapeLayer+MyShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 700FB2661F0C9D54004929D5 /* CAShapeLayer+MyShape.m */; };
+		70118A0F1EE6A7EB00902E8F /* DQTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70118A0E1EE6A7EB00902E8F /* DQTaskOperation.m */; };
+		70118A111EE6AD2100902E8F /* daqiangreelase.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70118A101EE6AD2100902E8F /* daqiangreelase.xcconfig */; };
 		701828B31E8F962A006878DE /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 701828A21E8F962A006878DE /* BabyBluetooth.m */; };
 		701828B41E8F962A006878DE /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 701828A41E8F962A006878DE /* BabyCallback.m */; };
 		701828B51E8F962A006878DE /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 701828A61E8F962A006878DE /* BabyCentralManager.m */; };
@@ -31,6 +36,8 @@
 		701828D71E8FAA6C006878DE /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 701828D61E8FAA6C006878DE /* PeripheralInfo.m */; };
 		704C4DF91D3CC138009BAEC7 /* AppDelegate+dynamicSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C4DF81D3CC138009BAEC7 /* AppDelegate+dynamicSet.m */; };
 		704C4DFC1D3CC2DA009BAEC7 /* DynamicConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C4DFB1D3CC2DA009BAEC7 /* DynamicConfig.m */; };
+		7069515E1F0A3AAD0053296F /* XZLHorizontalLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7069515D1F0A3AAD0053296F /* XZLHorizontalLineView.m */; };
+		706951611F0A93710053296F /* XZLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 706951601F0A93710053296F /* XZLTableViewCell.m */; };
 		70AAEC0C1EC5B66E0058917B /* placeholder1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70AAEC0B1EC5B66E0058917B /* placeholder1.png */; };
 		70BD43891E98A555007CDBF6 /* CustomeLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD43871E98A555007CDBF6 /* CustomeLayoutViewController.m */; };
 		70BD438A1E98A555007CDBF6 /* CustomeLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BD43881E98A555007CDBF6 /* CustomeLayoutViewController.xib */; };
@@ -52,6 +59,9 @@
 		70CA21011D39D92000D0B05E /* libMagicalRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CA20FB1D39D92000D0B05E /* libMagicalRecord.a */; };
 		70CA21021D39D92000D0B05E /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CA20FC1D39D92000D0B05E /* libMasonry.a */; };
 		70CA21031D39D92000D0B05E /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CA20FD1D39D92000D0B05E /* libReactiveCocoa.a */; };
+		70CA2B9B1EE1074E0020ECDA /* DQCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA2B9A1EE1074E0020ECDA /* DQCalendarView.m */; };
+		70CA2B9E1EE1075F0020ECDA /* DQCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA2B9D1EE1075F0020ECDA /* DQCalendarWeekView.m */; };
+		70CA2BA11EE108280020ECDA /* NSDate+DQCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA2BA01EE108280020ECDA /* NSDate+DQCalendar.m */; };
 		70D59CE51DF8118700C50F10 /* FuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D59B471DF8118700C50F10 /* FuncViewController.m */; };
 		70D59CE61DF8118700C50F10 /* FuncViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D59B481DF8118700C50F10 /* FuncViewController.xib */; };
 		70D59CE71DF8118700C50F10 /* RootListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D59B4A1DF8118700C50F10 /* RootListViewController.m */; };
@@ -199,6 +209,12 @@
 		70D59D9A1DF8118700C50F10 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D59CE01DF8118700C50F10 /* down@2x.png */; };
 		70D59D9B1DF8118700C50F10 /* YiRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D59CE21DF8118700C50F10 /* YiRefreshFooter.m */; };
 		70D59D9C1DF8118700C50F10 /* YiRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D59CE41DF8118700C50F10 /* YiRefreshHeader.m */; };
+		70D72E9E1EE7ABC00008677D /* APPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D72E9B1EE7ABC00008677D /* APPManager.m */; };
+		70D72E9F1EE7ABC00008677D /* HXAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D72E9D1EE7ABC00008677D /* HXAppInfo.m */; };
+		70E069A71EE2666D00CBD610 /* DQCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E069A61EE2666D00CBD610 /* DQCalendarHeader.m */; };
+		70E069AB1EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E069AA1EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.m */; };
+		70E29CA71F0B37AE00D55585 /* XZLHorizontalLineViewDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E29CA61F0B37AE00D55585 /* XZLHorizontalLineViewDomain.m */; };
+		70E29CAD1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E29CAC1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.m */; };
 		7FA0E0F0DA5684124006114C /* libPods-HXInvestigateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C221B140F692997FB72638 /* libPods-HXInvestigateUITests.a */; };
 		A7D03E9630E9EF137E1EEF46 /* libPods-HXInvestigate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4A65AA9C05C400900F98E7 /* libPods-HXInvestigate.a */; };
 /* End PBXBuildFile section */
@@ -232,6 +248,15 @@
 		700459381E078B5200CEBAD6 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
 		700459391E078B5200CEBAD6 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 		7004593A1E078B5200CEBAD6 /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
+		700FB25F1F0C975D004929D5 /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		700FB2601F0C975D004929D5 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
+		700FB2621F0C9D2D004929D5 /* MyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayer.h; sourceTree = "<group>"; };
+		700FB2631F0C9D2D004929D5 /* MyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayer.m; sourceTree = "<group>"; };
+		700FB2651F0C9D54004929D5 /* CAShapeLayer+MyShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+MyShape.h"; sourceTree = "<group>"; };
+		700FB2661F0C9D54004929D5 /* CAShapeLayer+MyShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+MyShape.m"; sourceTree = "<group>"; };
+		70118A0D1EE6A7EB00902E8F /* DQTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTaskOperation.h; sourceTree = "<group>"; };
+		70118A0E1EE6A7EB00902E8F /* DQTaskOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTaskOperation.m; sourceTree = "<group>"; };
+		70118A101EE6AD2100902E8F /* daqiangreelase.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = daqiangreelase.xcconfig; sourceTree = "<group>"; };
 		701828A11E8F962A006878DE /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
 		701828A21E8F962A006878DE /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
 		701828A31E8F962A006878DE /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
@@ -269,6 +294,10 @@
 		704C4DF81D3CC138009BAEC7 /* AppDelegate+dynamicSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+dynamicSet.m"; sourceTree = "<group>"; };
 		704C4DFA1D3CC2DA009BAEC7 /* DynamicConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicConfig.h; sourceTree = "<group>"; };
 		704C4DFB1D3CC2DA009BAEC7 /* DynamicConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicConfig.m; sourceTree = "<group>"; };
+		7069515C1F0A3AAD0053296F /* XZLHorizontalLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLHorizontalLineView.h; sourceTree = "<group>"; };
+		7069515D1F0A3AAD0053296F /* XZLHorizontalLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLHorizontalLineView.m; sourceTree = "<group>"; };
+		7069515F1F0A93710053296F /* XZLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLTableViewCell.h; sourceTree = "<group>"; };
+		706951601F0A93710053296F /* XZLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLTableViewCell.m; sourceTree = "<group>"; };
 		70AAEC0B1EC5B66E0058917B /* placeholder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder1.png; sourceTree = "<group>"; };
 		70BD43861E98A555007CDBF6 /* CustomeLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeLayoutViewController.h; sourceTree = "<group>"; };
 		70BD43871E98A555007CDBF6 /* CustomeLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeLayoutViewController.m; sourceTree = "<group>"; };
@@ -301,6 +330,12 @@
 		70CA20FB1D39D92000D0B05E /* libMagicalRecord.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMagicalRecord.a; path = "../../Library/Developer/Xcode/DerivedData/HXInvestigate-gzqcydsfvrczndamgyoqycfrjqfn/Build/Products/Debug-iphonesimulator/MagicalRecord/libMagicalRecord.a"; sourceTree = "<group>"; };
 		70CA20FC1D39D92000D0B05E /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../Library/Developer/Xcode/DerivedData/HXInvestigate-gzqcydsfvrczndamgyoqycfrjqfn/Build/Products/Debug-iphonesimulator/Masonry/libMasonry.a"; sourceTree = "<group>"; };
 		70CA20FD1D39D92000D0B05E /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "../../Library/Developer/Xcode/DerivedData/HXInvestigate-gzqcydsfvrczndamgyoqycfrjqfn/Build/Products/Debug-iphonesimulator/ReactiveCocoa/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		70CA2B991EE1074E0020ECDA /* DQCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQCalendarView.h; sourceTree = "<group>"; };
+		70CA2B9A1EE1074E0020ECDA /* DQCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQCalendarView.m; sourceTree = "<group>"; };
+		70CA2B9C1EE1075F0020ECDA /* DQCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQCalendarWeekView.h; sourceTree = "<group>"; };
+		70CA2B9D1EE1075F0020ECDA /* DQCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQCalendarWeekView.m; sourceTree = "<group>"; };
+		70CA2B9F1EE108280020ECDA /* NSDate+DQCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DQCalendar.h"; sourceTree = "<group>"; };
+		70CA2BA01EE108280020ECDA /* NSDate+DQCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DQCalendar.m"; sourceTree = "<group>"; };
 		70D59B461DF8118700C50F10 /* FuncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncViewController.h; sourceTree = "<group>"; };
 		70D59B471DF8118700C50F10 /* FuncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuncViewController.m; sourceTree = "<group>"; };
 		70D59B481DF8118700C50F10 /* FuncViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuncViewController.xib; sourceTree = "<group>"; };
@@ -587,6 +622,18 @@
 		70D59CE21DF8118700C50F10 /* YiRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshFooter.m; sourceTree = "<group>"; };
 		70D59CE31DF8118700C50F10 /* YiRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshHeader.h; sourceTree = "<group>"; };
 		70D59CE41DF8118700C50F10 /* YiRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshHeader.m; sourceTree = "<group>"; };
+		70D72E9A1EE7ABC00008677D /* APPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPManager.h; sourceTree = "<group>"; };
+		70D72E9B1EE7ABC00008677D /* APPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPManager.m; sourceTree = "<group>"; };
+		70D72E9C1EE7ABC00008677D /* HXAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXAppInfo.h; sourceTree = "<group>"; };
+		70D72E9D1EE7ABC00008677D /* HXAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXAppInfo.m; sourceTree = "<group>"; };
+		70E069A51EE2665A00CBD610 /* DQCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQCalendarHeader.h; sourceTree = "<group>"; };
+		70E069A61EE2666D00CBD610 /* DQCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQCalendarHeader.m; sourceTree = "<group>"; };
+		70E069A91EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLTakeMedicineHistoryCell.h; sourceTree = "<group>"; };
+		70E069AA1EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLTakeMedicineHistoryCell.m; sourceTree = "<group>"; };
+		70E29CA51F0B37AE00D55585 /* XZLHorizontalLineViewDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLHorizontalLineViewDomain.h; sourceTree = "<group>"; };
+		70E29CA61F0B37AE00D55585 /* XZLHorizontalLineViewDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLHorizontalLineViewDomain.m; sourceTree = "<group>"; };
+		70E29CAB1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLHorizontalLineHeaderView.h; sourceTree = "<group>"; };
+		70E29CAC1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLHorizontalLineHeaderView.m; sourceTree = "<group>"; };
 		7E820B9D8BA5BD98FA3BBF48 /* libPods-HXInvestigate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXInvestigate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23575E5BD5F64F8B2F15442 /* Pods-HXInvestigate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXInvestigate.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXInvestigate/Pods-HXInvestigate.release.xcconfig"; sourceTree = "<group>"; };
 		B0D4B3662AA56098547407F6 /* libPods-HXInvestigateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXInvestigateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -725,6 +772,17 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		7069515B1F0A3A7C0053296F /* DQLineView */ = {
+			isa = PBXGroup;
+			children = (
+				7069515C1F0A3AAD0053296F /* XZLHorizontalLineView.h */,
+				7069515D1F0A3AAD0053296F /* XZLHorizontalLineView.m */,
+				70E29CA51F0B37AE00D55585 /* XZLHorizontalLineViewDomain.h */,
+				70E29CA61F0B37AE00D55585 /* XZLHorizontalLineViewDomain.m */,
+			);
+			path = DQLineView;
+			sourceTree = "<group>";
+		};
 		70CA1FFB1D39D5DA00D0B05E = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +811,7 @@
 		70CA20061D39D5DA00D0B05E /* HXInvestigate */ = {
 			isa = PBXGroup;
 			children = (
+				70118A101EE6AD2100902E8F /* daqiangreelase.xcconfig */,
 				70CA200A1D39D5DA00D0B05E /* AppDelegate.h */,
 				70CA200B1D39D5DA00D0B05E /* AppDelegate.m */,
 				704C4DFA1D3CC2DA009BAEC7 /* DynamicConfig.h */,
@@ -794,6 +853,22 @@
 				70CA20311D39D5DA00D0B05E /* Info.plist */,
 			);
 			path = HXInvestigateUITests;
+			sourceTree = "<group>";
+		};
+		70CA2B981EE1072C0020ECDA /* DQCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				70E069A81EE2922200CBD610 /* Components */,
+				70E069A51EE2665A00CBD610 /* DQCalendarHeader.h */,
+				70E069A61EE2666D00CBD610 /* DQCalendarHeader.m */,
+				70CA2B991EE1074E0020ECDA /* DQCalendarView.h */,
+				70CA2B9A1EE1074E0020ECDA /* DQCalendarView.m */,
+				70CA2B9C1EE1075F0020ECDA /* DQCalendarWeekView.h */,
+				70CA2B9D1EE1075F0020ECDA /* DQCalendarWeekView.m */,
+				70CA2B9F1EE108280020ECDA /* NSDate+DQCalendar.h */,
+				70CA2BA01EE108280020ECDA /* NSDate+DQCalendar.m */,
+			);
+			path = DQCalendarView;
 			sourceTree = "<group>";
 		};
 		70D59B431DF8118700C50F10 /* Classes */ = {
@@ -929,6 +1004,8 @@
 		70D59B7D1DF8118700C50F10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				70118A0D1EE6A7EB00902E8F /* DQTaskOperation.h */,
+				70118A0E1EE6A7EB00902E8F /* DQTaskOperation.m */,
 				70D59B841DF8118700C50F10 /* HomeViewController.h */,
 				70D59B851DF8118700C50F10 /* HomeViewController.m */,
 				70D59B7E1DF8118700C50F10 /* HomeModelViewController.h */,
@@ -1077,6 +1154,18 @@
 		70D59BC41DF8118700C50F10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				700FB2651F0C9D54004929D5 /* CAShapeLayer+MyShape.h */,
+				700FB2661F0C9D54004929D5 /* CAShapeLayer+MyShape.m */,
+				700FB25F1F0C975D004929D5 /* MaskView.h */,
+				700FB2601F0C975D004929D5 /* MaskView.m */,
+				700FB2621F0C9D2D004929D5 /* MyLayer.h */,
+				700FB2631F0C9D2D004929D5 /* MyLayer.m */,
+				70E29CAB1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.h */,
+				70E29CAC1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.m */,
+				7069515F1F0A93710053296F /* XZLTableViewCell.h */,
+				706951601F0A93710053296F /* XZLTableViewCell.m */,
+				7069515B1F0A3A7C0053296F /* DQLineView */,
+				70CA2B981EE1072C0020ECDA /* DQCalendarView */,
 				70D59BC51DF8118700C50F10 /* SetDrawView.h */,
 				70D59BC61DF8118700C50F10 /* SetDrawView.m */,
 			);
@@ -1086,6 +1175,10 @@
 		70D59BC71DF8118700C50F10 /* HX */ = {
 			isa = PBXGroup;
 			children = (
+				70D72E9A1EE7ABC00008677D /* APPManager.h */,
+				70D72E9B1EE7ABC00008677D /* APPManager.m */,
+				70D72E9C1EE7ABC00008677D /* HXAppInfo.h */,
+				70D72E9D1EE7ABC00008677D /* HXAppInfo.m */,
 				700459351E07814D00CEBAD6 /* XZLTextView.h */,
 				700459361E07814D00CEBAD6 /* XZLTextView.m */,
 				70D59BDA1DF8118700C50F10 /* Network */,
@@ -1493,6 +1586,15 @@
 			path = YiRefresh;
 			sourceTree = "<group>";
 		};
+		70E069A81EE2922200CBD610 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70E069A91EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.h */,
+				70E069AA1EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		9E71B3CC094A4B263FA8EA89 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1584,7 +1686,7 @@
 				TargetAttributes = {
 					70CA20031D39D5DA00D0B05E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 9PXAZQ2944;
+						DevelopmentTeam = J3Z3CT678M;
 					};
 					70CA201F1D39D5DA00D0B05E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1633,6 +1735,7 @@
 				70D59D231DF8118700C50F10 /* SetFunc02ViewController.xib in Resources */,
 				70D59CF51DF8118700C50F10 /* bsDelPic@3x.png in Resources */,
 				70D59D1D1DF8118700C50F10 /* cursor@2x.png in Resources */,
+				70118A111EE6AD2100902E8F /* daqiangreelase.xcconfig in Resources */,
 				70D59D1E1DF8118700C50F10 /* loading.bundle in Resources */,
 				70BD438A1E98A555007CDBF6 /* CustomeLayoutViewController.xib in Resources */,
 				70D59D181DF8118700C50F10 /* LRTypeView.xib in Resources */,
@@ -1815,6 +1918,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D59CED1DF8118700C50F10 /* VideoModel.m in Sources */,
+				70CA2BA11EE108280020ECDA /* NSDate+DQCalendar.m in Sources */,
 				70D59D4A1DF8118700C50F10 /* UIFont+BSExt.m in Sources */,
 				701828BA1E8F962A006878DE /* BabySpeaker.m in Sources */,
 				70D59D0D1DF8118700C50F10 /* CoreTextUtils.m in Sources */,
@@ -1827,6 +1931,7 @@
 				70D59D5E1DF8118700C50F10 /* EXTRuntimeExtensions.m in Sources */,
 				70D59D571DF8118700C50F10 /* MTLManagedObjectAdapter.m in Sources */,
 				70D59D4D1DF8118700C50F10 /* UIView+BSExt.m in Sources */,
+				706951611F0A93710053296F /* XZLTableViewCell.m in Sources */,
 				70D59D901DF8118700C50F10 /* TAPageControl.m in Sources */,
 				70D59D4B1DF8118700C50F10 /* UIImage+BSExt.m in Sources */,
 				70D59D601DF8118700C50F10 /* MTLModel+NSCoding.m in Sources */,
@@ -1838,11 +1943,13 @@
 				701828B71E8F962A006878DE /* BabyOptions.m in Sources */,
 				70D59CE51DF8118700C50F10 /* FuncViewController.m in Sources */,
 				70D59D991DF8118700C50F10 /* ViewController1ViewController.m in Sources */,
+				700FB2611F0C975D004929D5 /* MaskView.m in Sources */,
 				70BD43901E98A722007CDBF6 /* UIView+AmbiguityTest.m in Sources */,
 				70D59D5D1DF8118700C50F10 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				70D59D161DF8118700C50F10 /* CutomeFirstView.m in Sources */,
 				70D59CF61DF8118700C50F10 /* BSPicHandle.m in Sources */,
 				70D59D951DF8118700C50F10 /* Statistics.m in Sources */,
+				70CA2B9E1EE1075F0020ECDA /* DQCalendarWeekView.m in Sources */,
 				70D59D921DF8118700C50F10 /* SDCycleScrollView.m in Sources */,
 				70D59D0B1DF8118700C50F10 /* CoreTextImageData.m in Sources */,
 				701828B51E8F962A006878DE /* BabyCentralManager.m in Sources */,
@@ -1857,6 +1964,7 @@
 				70D59D301DF8118700C50F10 /* HXAPP.m in Sources */,
 				700459371E07814D00CEBAD6 /* XZLTextView.m in Sources */,
 				701828CE1E8FA9CB006878DE /* SVProgressHUD.m in Sources */,
+				700FB2641F0C9D2D004929D5 /* MyLayer.m in Sources */,
 				704C4DF91D3CC138009BAEC7 /* AppDelegate+dynamicSet.m in Sources */,
 				70D59D221DF8118700C50F10 /* SetFunc02ViewController.m in Sources */,
 				70D59D8D1DF8118700C50F10 /* TAAbstractDotView.m in Sources */,
@@ -1893,22 +2001,26 @@
 				70D59D3A1DF8118700C50F10 /* BSCycleScrollView.m in Sources */,
 				70D59D241DF8118700C50F10 /* SetViewController.m in Sources */,
 				70D59D561DF8118700C50F10 /* MTLJSONAdapter.m in Sources */,
+				70118A0F1EE6A7EB00902E8F /* DQTaskOperation.m in Sources */,
 				70D59CEC1DF8118700C50F10 /* ThumbupsModel.m in Sources */,
 				701828D71E8FAA6C006878DE /* PeripheralInfo.m in Sources */,
 				70D59CFA1DF8118700C50F10 /* HXHomeCellHeadView.m in Sources */,
 				70D59D341DF8118700C50F10 /* HXUser.m in Sources */,
+				70E069AB1EE2931B00CBD610 /* XZLTakeMedicineHistoryCell.m in Sources */,
 				70D59D5C1DF8118700C50F10 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				70D59D8F1DF8118700C50F10 /* TADotView.m in Sources */,
 				70D59D0C1DF8118700C50F10 /* CoreTextLinkData.m in Sources */,
 				70D59D481DF8118700C50F10 /* UIColor+BSExt.m in Sources */,
 				70D59D881DF8118700C50F10 /* YMShowImageView.m in Sources */,
 				70D59D631DF8118700C50F10 /* MTLValueTransformer.m in Sources */,
+				70D72E9E1EE7ABC00008677D /* APPManager.m in Sources */,
 				70D59D201DF8118700C50F10 /* SetFun01ViewController.m in Sources */,
 				70D59D3B1DF8118700C50F10 /* GTMBase64.m in Sources */,
 				70D59D141DF8118700C50F10 /* CustomeView.m in Sources */,
 				701828D41E8FAA3F006878DE /* PeripheralViewController.m in Sources */,
 				70D59D891DF8118700C50F10 /* YMTapGestureRecongnizer.m in Sources */,
 				70D59D621DF8118700C50F10 /* MTLReflection.m in Sources */,
+				70CA2B9B1EE1074E0020ECDA /* DQCalendarView.m in Sources */,
 				70CA20151D39D5DA00D0B05E /* ____demo.xcdatamodeld in Sources */,
 				701828B61E8F962A006878DE /* BabyDefine.m in Sources */,
 				70D59D851DF8118700C50F10 /* MxlLabel.m in Sources */,
@@ -1923,6 +2035,7 @@
 				70BD43891E98A555007CDBF6 /* CustomeLayoutViewController.m in Sources */,
 				70D59D041DF8118700C50F10 /* HomeViewController.m in Sources */,
 				70D59CE91DF8118700C50F10 /* CommentsModel.m in Sources */,
+				70E29CA71F0B37AE00D55585 /* XZLHorizontalLineViewDomain.m in Sources */,
 				70D59D871DF8118700C50F10 /* WFTextView.m in Sources */,
 				70D59CF71DF8118700C50F10 /* BSShowPhotosView.m in Sources */,
 				70D59D441DF8118700C50F10 /* NSDictionary+BSExt.m in Sources */,
@@ -1933,6 +2046,7 @@
 				701828BB1E8F962A006878DE /* BabyToy.m in Sources */,
 				70D59D611DF8118700C50F10 /* MTLModel.m in Sources */,
 				70D59D061DF8118700C50F10 /* HXSelecteClassesLayout.m in Sources */,
+				7069515E1F0A3AAD0053296F /* XZLHorizontalLineView.m in Sources */,
 				70D59D931DF8118700C50F10 /* UIView+SDExtension.m in Sources */,
 				70D59CFD1DF8118700C50F10 /* HXHomeTableViewCell.m in Sources */,
 				70D59D3F1DF8118700C50F10 /* BSLanguage.m in Sources */,
@@ -1945,9 +2059,11 @@
 				70D59D431DF8118700C50F10 /* NSDate+BSExt.m in Sources */,
 				70D59D331DF8118700C50F10 /* HXStu.m in Sources */,
 				70D59D3E1DF8118700C50F10 /* BSHelper.m in Sources */,
+				70D72E9F1EE7ABC00008677D /* HXAppInfo.m in Sources */,
 				70D59D0E1DF8118700C50F10 /* CTDisplayView.m in Sources */,
 				70D59D451DF8118700C50F10 /* NSObject+BSExt.m in Sources */,
 				70D59D3D1DF8118700C50F10 /* BSDatabaseOperation.m in Sources */,
+				70E29CAD1F0B9F7D00D55585 /* XZLHorizontalLineHeaderView.m in Sources */,
 				70D59CFF1DF8118700C50F10 /* NSObject+TextExt.m in Sources */,
 				7004593B1E078B5200CEBAD6 /* AutoLayoutViewController.m in Sources */,
 				701828D31E8FAA3F006878DE /* CharacteristicViewController.m in Sources */,
@@ -1962,8 +2078,10 @@
 				70D59D491DF8118700C50F10 /* UIDevice+BSExt.m in Sources */,
 				701828B31E8F962A006878DE /* BabyBluetooth.m in Sources */,
 				70D59D191DF8118700C50F10 /* Person.m in Sources */,
+				700FB2671F0C9D54004929D5 /* CAShapeLayer+MyShape.m in Sources */,
 				70D59D391DF8118700C50F10 /* BSCycleLayout.m in Sources */,
 				70D59CE81DF8118700C50F10 /* TableListViewController.m in Sources */,
+				70E069A71EE2666D00CBD610 /* DQCalendarHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2105,7 +2223,7 @@
 			baseConfigurationReference = C05A38AEABE453FB8F6A3BD8 /* Pods-HXInvestigate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9PXAZQ2944;
+				DEVELOPMENT_TEAM = J3Z3CT678M;
 				GCC_PREFIX_HEADER = HXInvestigate/HXInvestigatePrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2119,7 +2237,7 @@
 				);
 				INFOPLIST_FILE = HXInvestigate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ldaqiangl.----demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldaqiangl.HXInvestigate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/** $(PODS_ROOT)/**";
 			};
@@ -2130,7 +2248,7 @@
 			baseConfigurationReference = A23575E5BD5F64F8B2F15442 /* Pods-HXInvestigate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9PXAZQ2944;
+				DEVELOPMENT_TEAM = J3Z3CT678M;
 				GCC_PREFIX_HEADER = HXInvestigate/HXInvestigatePrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2144,7 +2262,7 @@
 				);
 				INFOPLIST_FILE = HXInvestigate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ldaqiangl.----demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldaqiangl.HXInvestigate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/** $(PODS_ROOT)/**";
 			};

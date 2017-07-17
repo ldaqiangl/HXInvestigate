@@ -26,20 +26,23 @@
 
 - (void)beats {
     
-    if (isOver) {
-        BabyLog(@">>>beats isOver");
-        return;
-    }
-    
-    BabyLog(@">>>beats at :%@",[NSDate date]);
-    if (self.beatsTimer) {
-        [self.beatsTimer setFireDate: [[NSDate date]dateByAddingTimeInterval:self.beatsInterval]];
-    }
-    else {
-       self.beatsTimer = [NSTimer timerWithTimeInterval:self.beatsInterval target:self selector:@selector(beatsBreak) userInfo:nil repeats:YES];
-        [self.beatsTimer setFireDate: [[NSDate date]dateByAddingTimeInterval:self.beatsInterval]];
-        [[NSRunLoop currentRunLoop] addTimer:self.beatsTimer forMode:NSRunLoopCommonModes];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (isOver) {
+            BabyLog(@">>>beats isOver");
+            return;
+        }
+        
+        BabyLog(@">>>beats at :%@",[NSDate date]);
+        if (self.beatsTimer) {
+            [self.beatsTimer setFireDate: [[NSDate date]dateByAddingTimeInterval:self.beatsInterval]];
+        }
+        else {
+            self.beatsTimer = [NSTimer timerWithTimeInterval:self.beatsInterval target:self selector:@selector(beatsBreak) userInfo:nil repeats:YES];
+            [self.beatsTimer setFireDate: [[NSDate date]dateByAddingTimeInterval:self.beatsInterval]];
+            [[NSRunLoop currentRunLoop] addTimer:self.beatsTimer forMode:NSRunLoopCommonModes];
+        }
+    });
 }
 
 - (void)beatsBreak {

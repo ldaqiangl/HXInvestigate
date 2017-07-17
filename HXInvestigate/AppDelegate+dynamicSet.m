@@ -11,6 +11,7 @@
 @implementation AppDelegate (dynamicSet)
 
 - (void)setupLogging {
+    
     NSDictionary *config = @{
                              @"MainViewController": @{
                                      GLLoggingPageImpression: @"page imp - main page",

@@ -28,6 +28,8 @@ typedef void (^HXHomeCellEventCallBlock)(HomeCellEventType eventType,ClassNewsMo
 
 @interface HXHomeTableViewCell : UITableViewCell
 
+@property (nonatomic, copy) NSString *name;
+
 @property (nonatomic, weak) HXHomeCellHeadView *headView;//头部视图
 @property (nonatomic, weak) HXHomeCellTextView *textContentView;//文本内容视图
 @property (nonatomic, weak) HXHomeCellMediaView *mediaView;//媒体视图（图片、视频等）

@@ -82,6 +82,12 @@
     
 }
 
+- (void)setName:(NSString *)name {
+    
+    _name = name;
+    self.textLabel.text = _name;
+}
+
 #pragma mark - <数据加载和显示> -
 
 - (void)setupHomeTableViewCellWithData:(ClassNewsModel *)cellDataModel {

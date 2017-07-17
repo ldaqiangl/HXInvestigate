@@ -11,6 +11,7 @@
 #import "SetDrawView.h"
 
 @interface SetFunc02ViewController ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segControl;
 
 @end
 

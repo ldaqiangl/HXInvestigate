@@ -23,6 +23,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tishi" message:@"msg" delegate:nil cancelButtonTitle:@"quxiao" otherButtonTitles:@"queding", nil];
+//    [alert show];
+//    self.window.rootViewController = [[UIViewController alloc] init];
     
     return YES;
 }
